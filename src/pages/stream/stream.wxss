@@ -1,0 +1,58 @@
+/* pages/stream/stream.wxss */
+
+.parent {
+  width: 99%;
+  height: 500rpx;
+  background-color: #dcdcdc;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  /* align-items: center; */
+}
+
+.child {
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 25%;
+  height: 50px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+/* 额外修饰 */
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:nth-child(4), .child:nth-child(8) {
+  border-right: none;
+}
+
+.child:last-child {
+  border-bottom: none;
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+.footer .title {
+  font-size: 16px; text-align: left;
+}
+.footer view {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.footer view button {
+  width: 300rpx;
+  margin: 20rpx;
+  font-size: 14px;
+}

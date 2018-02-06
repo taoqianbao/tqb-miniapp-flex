@@ -1,0 +1,25 @@
+<!--pages/stream/stream.wxml-->
+<view class="parent" style="align-content:{{aligncontent}};">
+  <view class="child">1</view>
+  <view class="child">2</view>
+  <view class="child">3</view>
+  <view class="child">4</view>
+  <view class="child">5</view>
+  <view class="child">6</view>
+  <view class="child">7</view>
+  <view class="child">8</view>
+  <view class="child">9</view>
+</view>
+
+<view class='footer'>
+  <view class='title'>容器align-content值:<text>{{aligncontent}}</text></view>
+  <view>
+    <button type='default' bindtap='onTabAlign' data-type='flex-start'>flex-start</button>
+    <button type='default' bindtap='onTabAlign' data-type='flex-end'>flex-end</button>
+    <button type='default' bindtap='onTabAlign' data-type='center'>center</button>
+    <button type='default' bindtap='onTabAlign' data-type='space-between'>space-between</button>
+    <button type='default' bindtap='onTabAlign' data-type='space-around'>space-around</button>
+    <button type='default' bindtap='onTabAlign' data-type='stretch'>stretch</button>
+  </view>
+</view>
+
